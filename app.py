@@ -220,7 +220,7 @@ with reset_col:
 if reset_clicked:
     for k in list(st.session_state.keys()):
         del st.session_state[k]
-    st.experimental_rerun()
+    st.rerun()
 
 if "sales_data" not in st.session_state:
     st.session_state.sales_data = []  # list of dicts: Date, Location, Product, Quantity, Price, Total
